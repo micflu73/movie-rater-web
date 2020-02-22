@@ -50,7 +50,6 @@ class MovieForm extends Component {
 
         return (
             <React.Fragment> 
-                <h1>Form</h1>
                 <span>Title</span><br />
                 <input type="text" name="title"
                     value={this.props.movie.title} 
@@ -62,7 +61,7 @@ class MovieForm extends Component {
                 { !this.props.movie.id ? 
                     <button disabled={isDisabled} onClick={this.saveClicked} >Save</button> :
                     <button disabled={isDisabled} onClick={this.updateClicked} >Update</button> }
-                <button onClick={this.cancelClicked} >Cancel</button>
+                &nbsp;<button onClick={this.cancelClicked} >Cancel</button>
             </React.Fragment>
         )
     }
