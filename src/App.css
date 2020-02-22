@@ -12,6 +12,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   text-align: left;
+  grid-gap: 25px;
 }
 
 .rate-container {
@@ -29,4 +30,14 @@
 
 .purple {
   color: purple;
+}
+
+.movie-item {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+}
+
+.movie-item span {
+  font-size: 1.2em;
+  margin: 16px 10px;
 }
