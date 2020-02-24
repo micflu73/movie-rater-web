@@ -17,7 +17,7 @@ function MovieList(props) {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json',
-                'Authorization': 'Token 86fc7a6fe9f8564a562ada960cf751af1fcace11'
+                'Authorization': `Token ${this.props.token}`
             }
             }).then( resp => props.movieDeleted(movie))
             .catch( error => console.log(error));
